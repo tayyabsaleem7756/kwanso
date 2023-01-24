@@ -23,3 +23,16 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('login', (email, password) => { 
+
+
+    cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type(email);
+    cy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').type(password);
+    cy.get('.oxd-button').click();
+
+
+
+
+
+})
