@@ -9,7 +9,7 @@ describe('OrangeHRM Assignment', () => {
     //visit will load desired url-orangehrm
     cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login').wait(5000);
     //Empty submit will test validation
-    cy.get('.oxd-button').click();
+    cy.get('.oxd-button').click(); 
     //validation check for username
     cy.get(':nth-child(2) > .oxd-input-group > .oxd-text').contains("Required")
     //validation check for password
@@ -52,7 +52,7 @@ describe('OrangeHRM Assignment', () => {
     cy.get('.orangehrm-modal-footer > .oxd-button--label-danger').click({force: true})
     //cy.get('.oxd-table-body > :nth-child(1) > .oxd-table-row > :nth-child(2) > div').should("eq", "Tayyab Saleem Rajpoot");
 
-
+//test
   
   })
 
